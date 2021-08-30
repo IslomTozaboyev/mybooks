@@ -7,6 +7,7 @@ const BooksWrapper = styled.div`
     min-width: 250px !important;
     height: 250px;
     object-fit: cover;
+    cursor: pointer;
   }
   .input {
     padding: 5px 0;
