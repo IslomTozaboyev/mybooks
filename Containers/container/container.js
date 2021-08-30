@@ -7,7 +7,7 @@ const Container = ({ children, data }) => {
     <div>
       <ContainerWrapper>
         <Sidebar data={data} />
-        {children}
+        <div className="w-100"> {children}</div>
       </ContainerWrapper>
     </div>
   );
