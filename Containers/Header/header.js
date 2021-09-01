@@ -34,14 +34,6 @@ const Header = ({ toggle, theme }) => {
                 alt="rasm"
               />
             </div>
-            <input
-              className="input px-2"
-              type="text"
-              placeholder="Search..."
-              onChange={(event) => {
-                setSearchTerm(event.target.value);
-              }}
-            />
             <div>
               <ul className="d-flex py-4 m-0">
                 <li className="px-3">Book store</li>
@@ -50,8 +42,19 @@ const Header = ({ toggle, theme }) => {
               </ul>
             </div>
             <div className="d-flex align-items-center">
-              <Button className="text-white" onClick={toggle}>
-                <FontAwesomeIcon icon={theme == "light" ? faSun : faMoon} />
+              <input
+                className="input px-2"
+                type="text"
+                placeholder="Search..."
+                onChange={(event) => {
+                  setSearchTerm(event.target.value);
+                }}
+              />
+              <Button className="text" onClick={toggle}>
+                <FontAwesomeIcon
+                  className="text fs-6"
+                  icon={theme == "light" ? faSun : faMoon}
+                />
               </Button>
             </div>
           </div>

@@ -18,7 +18,7 @@ const Id = ({ dataList, dataBooks }) => {
   console.log(data);
   return (
     <Container data={dataList}>
-      <img src={data.book_image} alt="" />
+      <img src={data.book_image} alt="rasm" />
     </Container>
   );
 };
